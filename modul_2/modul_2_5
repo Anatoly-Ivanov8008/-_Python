@@ -1,1 +1,15 @@
+def get_matrix(n, m, value):
+    matrix1 = []
+    for i in range(n):
+# Создаем буферный список
+        matrix2 = []
+        for j in range(m):
+            matrix2.insert(j, value)
+        matrix1.append(matrix2)
+    print(matrix1)
 
+
+n = int(input('Введите количество строк: '))
+m = int(input('Введите колчество столбцов: '))
+value = int(input('Введите значение: '))
+get_matrix(n, m, value)
