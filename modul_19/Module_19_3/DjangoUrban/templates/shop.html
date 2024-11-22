@@ -1,0 +1,27 @@
+{% extends "menu.html" %}
+
+{% block namber_task %}
+    {{ block.super }}
+{% endblock %}
+
+{% block page_name %}
+<h1>Игры</h1>
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<h1>
+    <ul>
+        {% for i in game %}
+            <li>{{ i.title }}|||{{ i.description }}|||{{ i.cost }}      <button>Приобрести</button></li>
+        {% endfor %}
+    </ul>
+</h1>
+{% endblock %}
+
+{% block come_back %}
+    {{ block.super }}
+{% endblock %}
