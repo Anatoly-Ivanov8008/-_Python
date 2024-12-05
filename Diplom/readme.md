@@ -66,9 +66,6 @@ python IO_bound_asyncio.py  # Запуск проекта
 #### Threading
 Файл: IO_bound_threading.py
 ```python
-"""
-Запуск проекта
-"""
 python IO_bound_threading.py  # Запуск проекта
 ```
 #### Пример вывода:
@@ -83,9 +80,6 @@ python IO_bound_threading.py  # Запуск проекта
 #### Multiprocessing
 Файл: IO_bound_multiprocessing.py
 ```python
-"""
-Запуск проекта
-"""
 python IO_bound_multiprocessing.py  # Запуск проекта
 ```
 #### Пример вывода:
