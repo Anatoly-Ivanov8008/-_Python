@@ -1,22 +1,13 @@
 
 # Дипломная работа
-
-
-
-
 ## тема: Сравнение различных подходов к реализации асинхронного программирования: asyncio, threading и multiprocessing.
-
 ## задача: Реализовать асинхронные задачи с использованием asyncio, threading и multiprocessing, сравнить их производительность и уместность для различных типов задач.
 ### Автор: Иванов Анатолий Леонидович
-
 ## Описание проекта:
-
 ### Этот проект посвящен сравнению производительности и применимости трёх подходов к реализации асинхронного программирования в Python:
-
 * asyncio
 * threading
 * multiprocessing.
-  
 ## Рассматриваются два типа задач:
 
 * IO-bound — задачи, связанные с вводом-выводом, например, выполнение HTTP-запросов.
@@ -56,11 +47,14 @@
 ```python
 pip install -r requirements.txt
 ```
-# Как запустить примеры:
+# Примеры:
 ### IO-bound задача (HTTP-запросы)
 #### Asyncio
 Файл: IO_bound_asyncio.py
 ```python
+"""
+Запуск проекта
+"""
 python IO_bound_asyncio.py
 ```
 #### Пример вывода:
@@ -75,6 +69,9 @@ python IO_bound_asyncio.py
 #### Threading
 Файл: IO_bound_threading.py
 ```python
+"""
+Запуск проекта
+"""
 python IO_bound_threading.py
 ```
 #### Пример вывода:
@@ -89,6 +86,9 @@ python IO_bound_threading.py
 #### Multiprocessing
 Файл: IO_bound_multiprocessing.py
 ```python
+"""
+Запуск проекта
+"""
 python IO_bound_multiprocessing.py
 ```
 #### Пример вывода:
