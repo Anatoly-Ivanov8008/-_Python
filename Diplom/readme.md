@@ -4,7 +4,7 @@
 ## задача: Реализовать асинхронные задачи с использованием asyncio, threading и multiprocessing, сравнить их производительность и уместность для различных типов задач.
 ### Автор: Иванов Анатолий Леонидович
 ## Описание проекта:
-### Этот проект посвящен сравнению производительности и применимости трёх подходов к реализации асинхронного программирования в Python:
+### Этот проект нацелен на сравнение производительности и применимости трёх подходов к реализации асинхронного программирования в Python:
 * asyncio
 * threading
 * multiprocessing.
@@ -52,10 +52,7 @@ pip install -r requirements.txt
 #### Asyncio
 Файл: IO_bound_asyncio.py
 ```python
-"""
-Запуск проекта
-"""
-python IO_bound_asyncio.py
+python IO_bound_asyncio.py  # Запуск проекта
 ```
 #### Пример вывода:
 ```python
@@ -72,7 +69,7 @@ python IO_bound_asyncio.py
 """
 Запуск проекта
 """
-python IO_bound_threading.py
+python IO_bound_threading.py  # Запуск проекта
 ```
 #### Пример вывода:
 ```python
@@ -89,7 +86,7 @@ python IO_bound_threading.py
 """
 Запуск проекта
 """
-python IO_bound_multiprocessing.py
+python IO_bound_multiprocessing.py  # Запуск проекта
 ```
 #### Пример вывода:
 ```python
@@ -104,7 +101,7 @@ python IO_bound_multiprocessing.py
 #### Asyncio
 Файл: CPU_bound_asyncio.py
 ```python
-python CPU_bound_asyncio.py
+python CPU_bound_asyncio.py  # Запуск проекта
 ```
 #### Пример вывода:
 ```python
@@ -116,7 +113,7 @@ python CPU_bound_asyncio.py
 #### Threading
 Файл: CPU_bound_threading.py
 ```python
-python CPU_bound_threading.py
+python CPU_bound_threading.py  # Запуск проекта
 ```
 #### Пример вывода:
 ```python
@@ -128,7 +125,7 @@ python CPU_bound_threading.py
 #### Multiprocessing
 Файл: CPU_bound_multiprocessing.py
 ```python
-python CPU_bound_multiprocessing.py
+python CPU_bound_multiprocessing.py  # Запуск проекта
 ```
 #### Пример вывода:
 ```python
