@@ -36,12 +36,13 @@
 ├── Diplom_project.docx           # Дипломная работа
 ├── README.md                     # Описание проекта
 ├── requirements.txt              # Список зависимостей
-├── CPU_bound_asyncio.py          # CPU-bound задача с использованием asyncio
-├── CPU_bound_threading.py        # CPU-bound задача с использованием threading
-├── CPU_bound_multiprocessing.py  # CPU-bound задача с использованием multiprocessing
-├── IO_bound_asyncio.py           # IO-bound задача с использованием asyncio
-├── IO_bound_threading.py         # IO-bound задача с использованием threading
-├── IO_bound_multiprocessing.py   # IO-bound задача с использованием multiprocessing
+├── kod                           # Каталог с файлами проекта
+├────── CPU_bound_asyncio.py          # CPU-bound задача с использованием asyncio
+├────── CPU_bound_threading.py        # CPU-bound задача с использованием threading
+├────── CPU_bound_multiprocessing.py  # CPU-bound задача с использованием multiprocessing
+├────── IO_bound_asyncio.py           # IO-bound задача с использованием asyncio
+├────── IO_bound_threading.py         # IO-bound задача с использованием threading
+├────── IO_bound_multiprocessing.py   # IO-bound задача с использованием multiprocessing
 ```
 
 ## Требования:
@@ -55,11 +56,90 @@
 ```python
 pip install -r requirements.txt
 ```
-## Как запустить примеры:
+# Как запустить примеры:
 ### IO-bound задача (HTTP-запросы)
 #### Asyncio
-Файл: io_bound_asyncio.py
+Файл: IO_bound_asyncio.py
 ```python
 python IO_bound_asyncio.py
 ```
+#### Пример вывода:
+```python
+Отправлено запросов: 100
+Успешных ответов: 100
+Время выполнения: 4.16 секунд
+Загрузка CPU: 2.4%
+Использовано памяти: 8000.02 МБ
+Свободно памяти: 8293.27 МБ
+```
+#### Threading
+Файл: IO_bound_threading.py
+```python
+python IO_bound_threading.py
+```
+#### Пример вывода:
+```python
+Отправлено запросов: 100
+Успешных ответов: 100
+Время выполнения: 4.95 секунд
+Загрузка CPU: 3.5%
+Использовано памяти: 7876.27 МБ
+Свободно памяти: 8417.02 МБ
+```
+#### Multiprocessing
+Файл: IO_bound_multiprocessing.py
+```python
+python IO_bound_multiprocessing.py
+```
+#### Пример вывода:
+```python
+Отправлено запросов: 100
+Успешных ответов: 100
+Время выполнения: 14.09 секунд
+Загрузка CPU: 4.1%
+Использовано памяти: 7982.62 МБ
+Свободно памяти: 8310.66 МБ
+```
+### CPU-bound задача (вычисление факториалов)
+#### Asyncio
+Файл: CPU_bound_asyncio.py
+```python
+python CPU_bound_asyncio.py
+```
+#### Пример вывода:
+```python
+Время выполнения: 0.08 секунд
+Загрузка CPU: 4.5%
+Использовано памяти: 8016.62 МБ
+Свободно памяти: 8276.67 МБ
+```
+#### Threading
+Файл: CPU_bound_threading.py
+```python
+python CPU_bound_threading.py
+```
+#### Пример вывода:
+```python
+Время выполнения: 0.08 секунд
+Загрузка CPU: 8.8%
+Использовано памяти: 8066.65 МБ
+Свободно памяти: 8226.64 МБ
+```
+#### Multiprocessing
+Файл: CPU_bound_multiprocessing.py
+```python
+python CPU_bound_multiprocessing.py
+```
+#### Пример вывода:
+```python
+Время выполнения: 19.92 секунд
+Загрузка CPU: 15.7%
+Использовано памяти: 8176.69 МБ
+Свободно памяти: 8116.60 МБ
+```
+# Выводы:
+* Для IO-bound задач наилучшие результаты показывает asyncio, благодаря своей способности обрабатывать задачи без блокировки потоков.
+* Для CPU-bound задач лучше подходит multiprocessing, так как позволяет использовать все ядра процессора.
+
+
 
